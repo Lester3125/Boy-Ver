@@ -7,13 +7,13 @@ const pixelmatch = require("pixelmatch");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// 👧 Girl bot reference avatar (gray skin tone)
-const REFERENCE_USER_ID = 5514808927;
+// 👦 Gray Boy bot reference avatar
+const REFERENCE_USER_ID = 8915281951;
 
 let referenceImage = null;
 
 app.get("/", (req, res) => {
-    res.send("🟢 Girl Image Kicker (Relaxed Grayscale Match) is Running");
+    res.send("🟢 Boy Image Kicker (Gray Skin Compatible) is Running");
 });
 
 async function fetchAvatarHeadshot(userId) {
@@ -85,7 +85,7 @@ app.get("/compare/:userid", async (req, res) => {
 });
 
 app.listen(PORT, async () => {
-    console.log(`✅ Girl Kicker (Relaxed Match) running on port ${PORT}`);
+    console.log(`✅ Boy Kicker running on port ${PORT}`);
     try {
         referenceImage = await fetchAvatarHeadshot(REFERENCE_USER_ID);
         console.log("✅ Reference avatar loaded (grayscale ready)");

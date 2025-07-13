@@ -1,16 +1,16 @@
 {
-  "name": "gray-girl-image-kicker",
+  "name": "boy-image-kicker",
   "version": "1.0.0",
-  "description": "Image comparison-based Roblox bot kicker backend, tolerant of gray skin tones.",
+  "description": "Grayscale Boy Avatar Clone Detection",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "^1.6.8",
+    "axios": "^1.6.7",
     "express": "^4.19.2",
     "pixelmatch": "^5.3.0",
     "pngjs": "^7.0.0",
-    "sharp": "^0.33.3"
+    "sharp": "^0.33.2"
   }
 }
